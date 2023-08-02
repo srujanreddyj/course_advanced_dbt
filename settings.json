@@ -1,0 +1,20 @@
+{
+    "terminal.integrated.env.osx": {
+    "SHELL":"/bin/zsh",
+    "DBT_PROFILES_DIR": "../../../.dbt/",
+    "DATA_TEST_BRANCH":"main",
+    "SNOWFLAKE_PROD_DATABASE":"PROD",
+    "SNOWFLAKE_PREP_DATABASE":"PREP",
+    "SNOWFLAKE_SNAPSHOT_DATABASE":"SNOWFLAKE",
+    "SNOWFLAKE_LOAD_DATABASE":"RAW",
+    "SNOWFLAKE_STATIC_DATABASE":"STATIC",
+    "SNOWFLAKE_PREP_SCHEMA":"preparation",
+    "SNOWFLAKE_TRANSFORM_WAREHOUSE":"ANALYST_XS",
+    "SALT":"pizza",
+    "SALT_IP":"pie",
+    "SALT_NAME":"pepperoni",
+    "SALT_EMAIL":"cheese",
+    "SALT_PASSWORD":"416C736F4E6F745365637265FFFFFFAB"
+    },
+    "dbt.queryLimit": 500
+}

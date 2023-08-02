@@ -1,7 +1,7 @@
 # Bingeflix Docs
 This file contains docs blocks for Bingeflix sources
 
-## Common Unique Fields 
+## Common Unique Fields
 This section contains documentation from the Unique identifiers of the Bingeflix data tables.
 
 {% docs bingeflix_user_id %}
