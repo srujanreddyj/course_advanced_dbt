@@ -1,0 +1,40 @@
+version: 2
+
+macros:
+  - name: rolling_func_periods
+    description: Generates a SQL window function with a rolling calculation over a specified period.
+    arguments:
+      - name: column_name
+        description: The name of the column on which the function will be applied.
+        type: string
+        # required: true
+
+      - name: function
+        description: The SQL aggregate/window function to apply (e.g., 'avg', 'sum', 'count', etc.).
+        type: string
+        # default: avg
+        # required: false
+
+      - name: partition_by
+        description: The column used for partitioning the result. Leave empty for no partitioning.
+        type: string
+        # required: false
+
+      - name: order_by
+        description: The column used for ordering within the partition. Leave empty for no specific order.
+        type: string
+        # required: false
+
+      - name: window_size
+        description: >
+          The number of rows preceding the current row for the calculation.
+          Use 'unbounded' to include all preceding rows in the range.
+        type: union[int, string]
+        # accepted_values: ['unbounded', integer]
+        # required: false
+        # default: 6
+
+      - name: alias_name
+        description: The name of the column to start with
+        type: string
+        # required: true

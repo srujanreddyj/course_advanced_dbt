@@ -203,5 +203,7 @@ final AS (
 
 SELECT
     date_month::TEXT || '-' || subscription_id::TEXT || '-' || change_category::TEXT AS surrogate_key,
+    {{ rolling_func_periods(column_name='mrr_amount', function='avg', partition_by='user_id', order_by='date_month', window_size=7) }},
+    {{ rolling_func_periods(column_name='mrr_amount', function='sum', partition_by='date_month', order_by='date_month', window_size=7) }},
     *
 FROM final
