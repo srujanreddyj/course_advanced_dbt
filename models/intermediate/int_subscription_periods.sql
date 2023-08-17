@@ -1,4 +1,4 @@
-WITH 
+WITH
 -- Import CTEs
 -- Get raw monthly subscriptions
 monthly_subscriptions AS (

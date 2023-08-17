@@ -28,7 +28,7 @@ models:
   +persist_docs:
     relation: true
     columns: true
-  
+
   dbt_snowflake_monitoring:
     +database: DEV
     +schema: DBT_JSRUJANREDDYGMAILCOM

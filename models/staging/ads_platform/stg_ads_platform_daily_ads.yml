@@ -22,4 +22,3 @@ models:
 
       - name: ctr
         description: "The click through rate on the campaign impressions."
-

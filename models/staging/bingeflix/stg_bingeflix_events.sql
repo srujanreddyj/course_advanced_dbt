@@ -17,7 +17,7 @@ WITH source AS (
 
 {% if is_incremental() %}
   {{ incremental_where_clause('created_at', -3, 'day') }}
-  
+
   {# WHERE created_at > (SELECT MAX(created_at) FROM {{ this }}) #}
 
 {% endif %}

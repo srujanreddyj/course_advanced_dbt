@@ -16,7 +16,7 @@ months AS (
 -- Logic CTEs
 -- Create subscription period start_month and end_month ranges
 subscription_periods AS (
-    select 
+    select
         *
     from {{ ref('int_subscription_periods') }}
 ),

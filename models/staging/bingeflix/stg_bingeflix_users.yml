@@ -9,32 +9,32 @@ models:
           - unique
 
       - name: created_at
-        description: '{{ doc("bingeflix_user_created_at") }}'        
+        description: '{{ doc("bingeflix_user_created_at") }}'
 
       - name: phone_number
-        description: '{{ doc("bingeflix_user_phone_number") }}'        
+        description: '{{ doc("bingeflix_user_phone_number") }}'
 
       - name: deleted_at
         description: '{{ doc("bingeflix_user_deleted_at") }}'
 
       - name: username
-        description: '{{ doc("bingeflix_user_username") }}'        
+        description: '{{ doc("bingeflix_user_username") }}'
 
       - name: name
-        description: '{{ doc("bingeflix_user_name") }}'        
+        description: '{{ doc("bingeflix_user_name") }}'
 
       - name: sex
         description: '{{ doc("bingeflix_user_sex") }}'
 
       - name: email
-        description: '{{ doc("bingeflix_user_email") }}'        
+        description: '{{ doc("bingeflix_user_email") }}'
 
       - name: birthdate
-        description: '{{ doc("bingeflix_user_birthdate") }}'        
+        description: '{{ doc("bingeflix_user_birthdate") }}'
 
       - name: region
-        description: '{{ doc("bingeflix_user_region") }}'        
+        description: '{{ doc("bingeflix_user_region") }}'
 
       - name: country
         description: '{{ doc("bingeflix_user_country") }}'
-        
+
