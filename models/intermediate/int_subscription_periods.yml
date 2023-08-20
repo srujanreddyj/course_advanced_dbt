@@ -1,0 +1,22 @@
+models:
+  - name: int_subscription_periods
+    description: This is an intermediate model that counts the total number of subscription periods per user_id.
+    columns:
+      - name: subscription_id
+        description: The unique identifier for the session.
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        description: The number of times the user logged in during the specified session.
+
+      - name: plan_name
+        description: The number of times the user logged out during the specified session.
+
+      - name: monthly_amount
+        description: The number of times the user watched videos during the specified session.
+
+      - name: starts_at
+      - name: ends_at
+      - name: start_month

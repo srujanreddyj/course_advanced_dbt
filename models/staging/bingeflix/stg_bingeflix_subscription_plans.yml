@@ -16,7 +16,7 @@ models:
       - name: pricing
         description: '{{ doc("bingeflix_subscription_plans_pricing") }}'
         tests:
-          - column_greater_than_0
+          - column_is_positive
 
       - name: payment_period
         description: '{{ doc("bingeflix_subscription_plans_payment_period") }}'

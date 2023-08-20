@@ -1,4 +1,4 @@
-{% test column_greater_than_0(model, column_name) %}
+{% test column_is_positive(model, column_name) %}
 
 SELECT *
 FROM {{ model }}
